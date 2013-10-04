@@ -1,7 +1,7 @@
-json-to-csv
-===========
+`json-to-csv`  [![Build Status](https://travis-ci.org/olauzon/json-to-csv.png?branch=master)](https://travis-ci.org/olauzon/json-to-csv)
+=============
 
-A Clojure library that converts JSON input files to CSV output files.
+A Clojure utility for converting JSON input files to CSV output files.
 
 
 Usage
@@ -25,7 +25,7 @@ Given the following input JSON in data/input.json
 To export `user.password` and `remote_ip` as CSVs to data/output.csv, run
 
 ```bash
-lein run -m json-to-csv.core data/input.json data/output.csv user.password,remote_ip
+lein run data/input.json data/output.csv user.password,remote_ip
 ```
 
 result
